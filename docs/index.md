@@ -3,5 +3,5 @@
 
 ## Boilerplates
 
-- [Docker Boilerplate](https://github.com/docker/awesome-compose)
-- [Spring Boot Boilerplate](https://start.spring.io/)
+- [Docker Boilerplate](/boilerplates/docker/index.md)
+- [Spring Boot Boilerplate](/boilerplates/springboot/)
