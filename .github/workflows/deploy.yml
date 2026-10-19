@@ -1,26 +1,36 @@
-name: deploy mkdocs to github pages
+
+name: Deploy MkDocs
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: astral-sh/setup-uv@v9.0.0
 
-      - name: Install dependencies and build site
-        run: |
-          uv sync
-          uv run mkdocs build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install mkdocs-material
+
+      - name: Build site
+        run: mkdocs build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
-          cname: ${{ vars.CUSTOM_DOMAIN }}
