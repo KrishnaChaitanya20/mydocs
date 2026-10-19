@@ -3,5 +3,5 @@
 
 ## Boilerplates
 
-- [Docker Boilerplate](/boilerplates/docker/index.md)
+- [Docker Boilerplate](/boilerplates/docker/)
 - [Spring Boot Boilerplate](/boilerplates/springboot/)
