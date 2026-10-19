@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://docs.dkcdev.me/boilerplates/docker/</loc>
+         <lastmod>2026-10-19</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dkcdev.me/boilerplates/springboot/CORSConfig/</loc>
+         <lastmod>2026-10-19</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dkcdev.me/boilerplates/springboot/security/OIDC/</loc>
+         <lastmod>2026-10-19</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dkcdev.me/boilerplates/springboot/security/SecurityChain/</loc>
+         <lastmod>2026-10-19</lastmod>
+    </url>
+</urlset>
